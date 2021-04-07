@@ -1,0 +1,43 @@
+.list-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__buttons {
+        display: flex;
+        &>* {
+            margin: 5px;
+        }
+    }
+    &__books {
+        display: flex;
+        flex-direction: column;
+        &__title {
+            font-weight: bold;
+        }
+        &__author {
+            color: gray;
+            font-size: 80%;
+            font-style: italic;
+        }
+    }
+}
+
+.make-inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &.column {
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    select,
+    label,
+    input {
+        margin: 0 2px;
+    }
+    &.form-group {
+        margin-bottom: 0;
+    }
+}
